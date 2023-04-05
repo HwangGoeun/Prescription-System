@@ -1,25 +1,28 @@
+import {BrowserRouter, Route, Routes} from 'react-router-dom';
 import './App.css';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Login from './login';
-import SignUp from './Signup';
-import Re_PW from './Re_PW';
-
 import Hospital from './Hospital';
+import Pharmacy from './Pharmacy';
+import Home from './Home';
+import Information from './Information';
+import Informationpharmacy from './Informationpharmacy';
+import Addinfo from './Addinfo';
+import Addinfophar from './Addinfophar';
 
 function App() {
   return (
-    
-      <BrowserRouter>
-        <Routes>
-          <Route path={"/"} element ={<Login/>}></Route>
-          <Route path={"/Signup"} element={<SignUp/>}></Route>
-          <Route path={"/Re_PW"} element={<Re_PW/>}></Route>
-          <Route path={"/Hospital"} element={<Hospital/>}></Route>
+    <BrowserRouter>
+      <Routes>
+        <Route path={"/"} element={<Home/>}></Route>
+        <Route path={"/Hospital"} element={<Hospital/>}></Route>
+        <Route path={"/Pharmacy"} element={<Pharmacy/>}></Route>
+        <Route path={"/Information"} element={<Information/>}></Route>
+        <Route path={"/Informationpharmacy"} element={<Informationpharmacy/>}></Route>
+        <Route path={"/Addinfo"} element={<Addinfo/>}></Route>
+        <Route path={"/Addinfophar"} element={<Addinfophar/>}></Route>
 
-        </Routes>
-      </BrowserRouter>
-    
+      </Routes>
+    </BrowserRouter>
   );
 }
 
-export default App  ;
+export default App;

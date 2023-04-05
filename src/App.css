@@ -36,33 +36,3 @@
     transform: rotate(360deg);
   }
 }
-
-.LoginBox{
-  text-align: center;
-  align-items: center;
-  font-size: 18px;
-  line-height: 1;
-
-}
-.Name{
-  text-align: center;
-  font-size: 30px;
-  line-height: 10;
-}
-.LoginButton{
-    
-    align-items: center;
-    width: 100;
-    height: 50;
-    padding: 12;
-    background: '#fdc453';
-    border-color:'deeepink' ;
-    border-radius: 15;
-    margin-top: 10;
-  
-}
-.CenterButton{
-  
-  text-align: center;
-  align-items: center;
-}
