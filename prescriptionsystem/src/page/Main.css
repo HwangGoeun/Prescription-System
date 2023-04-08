@@ -3,22 +3,18 @@
     background-color: green;
 }
 
-.people {
+.patient {
     padding-left: 20%;
     background-color: goldenrod;
 }
 
-.prescList {
+.list {
     padding-left: 20%;
     background-color: darkgray;
 }
 
 #header {
     padding-left: 20%;
-}
-
-.presc {
-    padding-left: 3%;
 }
 
 button {

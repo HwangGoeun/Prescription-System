@@ -1,6 +1,6 @@
 import React from "react";
 
-function SidebarItem({ item }) {
+function HospitalSidebarItem({ item }) {
     return (
         <div className="sidebar-item">
             <p>{item.name}</p>
@@ -8,4 +8,4 @@ function SidebarItem({ item }) {
     );
 }
 
-export default SidebarItem;
+export default HospitalSidebarItem;
