@@ -1,0 +1,8 @@
+function Prescription() {
+    return (
+        <h1>처방전 3</h1>
+    );
+
+}
+
+export default Prescription;
