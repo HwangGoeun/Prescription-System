@@ -19,7 +19,6 @@ function App() {
         <Route path={"/Informationpharmacy"} element={<Informationpharmacy/>}></Route>
         <Route path={"/Addinfo"} element={<Addinfo/>}></Route>
         <Route path={"/Addinfophar"} element={<Addinfophar/>}></Route>
-
       </Routes>
     </BrowserRouter>
   );
