@@ -1,4 +1,4 @@
-import React from "react";
+import { React } from "react";
 
 import "./MedicineItem";
 
@@ -15,7 +15,7 @@ function Prescription1() {
         <div className="main">
             <h1 id="header">약 목록</h1>
             <div className='list'>
-                {medicine.map((med, index) => {
+                {medicine.map((med) => {
                     return (
                         <div className="main">
                             <div className="medicineBox">

@@ -12,7 +12,7 @@ function PatientPrescList() {
 
     const navigate = useNavigate();
     const viewPresc = () => {
-        navigate("./Prescription1");
+        navigate("/Prescription1");
     };
 
     return (

@@ -1,6 +1,7 @@
- .main {
+.main {
     padding-left: 20%;
-    background-color: green;
+    font-family: 'Noto Sans KR';
+    /* background-color: green; */
 }
 
 .patient {
@@ -10,7 +11,7 @@
 
 .list {
     padding-left: 20%;
-    background-color: darkgray;
+    background-color:blanchedalmond
 }
 
 #header {
@@ -30,6 +31,6 @@ button {
 .medicineBox {
     background-color: cornsilk;
     border-radius: 20px 20px 20px 20px;
-    padding: 5px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
     margin-right: 40px;
 }
