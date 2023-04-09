@@ -1,14 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import SidebarItem from "./HospitalSidebarItem";
+import SidebarItem from "./PatientSidebarItem";
 
 import "./Sidebar.css"
 
-function HospitalSidebar() {
+function PatientSidebar() {
     const items = [
-        { name: "처방전 목록", path: "/" },
-        { name: "환자 목록", path: "/patient"}
+        { name: "처방전 목록", path: "/" }
     ];
 
     return (
@@ -26,4 +25,4 @@ function HospitalSidebar() {
     );
 }
 
-export default HospitalSidebar;
+export default PatientSidebar;

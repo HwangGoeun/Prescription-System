@@ -1,25 +1,17 @@
-import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-
-import Sidebar from './navigation/Sidebar';
-import SidebarManage from './navigation/SidebarManage';
-import Hospital from './page/Hospital';
-import Main from './page/Main';
-import People from './page/People';
-import Pharmacy from './page/Pharmacy';
-import PrescList from './page/PrescList';
-
+import HospitalPage from "./page/HospitalPage";
+import ManagePage from "./page/ManagePage";
+import PatientPage from "./page/PatientPage";
+import PharmacyPage from "./page/PharmacyPage";
+import Prescription1 from "./page/Prescription1";
 
 function App() {
   return (
     <div>
-      <BrowserRouter>
-        <SidebarManage></SidebarManage>
-        <Routes>
-          <Route path="/" element={<Pharmacy />} />
-          <Route path='/pharmacy' element={<Hospital />} />
-        </Routes>
-      </BrowserRouter>
+      {/* // 주석 해제해서 확인해주시면 됩니다! */}
+      {/* <HospitalPage></HospitalPage> */}
+      {/* <PatientPage></PatientPage> */}
+      <PharmacyPage></PharmacyPage>
+      {/* <Prescription1></Prescription1> */}
     </div>
   );
 }
