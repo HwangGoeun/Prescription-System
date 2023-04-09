@@ -15,7 +15,7 @@ function PharmacySidebar() {
         <div className="sidebar">
             {items.map((item, index) => {
                 return (
-                    <Link to={item.path} key={index}>
+                    <Link to={item.path} key={index} style={{textDecoration: "none"}}>
                         <SidebarItem 
                             item={item}
                         />

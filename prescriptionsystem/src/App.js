@@ -9,9 +9,8 @@ function App() {
     <div>
       {/* // 주석 해제해서 확인해주시면 됩니다! */}
       {/* <HospitalPage></HospitalPage> */}
-      {/* <ManagePage></ManagePage> */}
-      <PatientPage></PatientPage>
-      {/* <PharmacyPage></PharmacyPage> */}
+      {/* <PatientPage></PatientPage> */}
+      <PharmacyPage></PharmacyPage>
       {/* <Prescription1></Prescription1> */}
     </div>
   );

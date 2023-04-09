@@ -5,10 +5,14 @@ import PharmacySidebar from "../navigation/PharmacySidebar";
 import PharmacyHospitalList from "./PharmacyHospitalList";
 import PharmacyPrescList from "./PharmacyPrescList";
 
+import "./Main.css";
+
 function PharmacyPage() {
     return (
         <div>
-            <h1>Pharmacy</h1>
+            <div className="header">
+                <h1>Pharmacy</h1>
+            </div>
             <BrowserRouter>
                 <PharmacySidebar></PharmacySidebar>
                 <Routes>

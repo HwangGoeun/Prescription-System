@@ -4,20 +4,22 @@ import "./Main.css"
 
 function PharmacyPrescList() {
     const presc = [
-        { name: "방문 환자 1", date: "2023-04-05"},
-        { name: "방문 환자 2", date: "2023-04-06"},
-        { name: "방문 환자 3", date: "2023-04-07"},
-        { name: "방문 환자 4", date: "2023-05-08"}
+        { name: "김환자", birth: "2002-06-27", date: "2023-03-05", time:"13:00"},
+        { name: "황환자", birth: "2002-10-11", date: "2023-04-06", time:"13:34"},
+        { name: "송환자", birth: "2002-12-20", date: "2023-04-07", time:"14:34"}
     ];
 
     return (
         <div className="main">
-            <h1 id="header">Prescription System</h1>
             <div className='list'>
                 {presc.map((pre, index) => {
                     return (
                         <button variant="primary" size="lg">
-                            {pre.name} / {pre.date}
+                            <div className="buttonText">
+                                <div className="name">{pre.name}</div>
+                                <br></br>
+                                {pre.date} {pre.time}
+                            </div>
                         </button>
                     ); 
                 })}

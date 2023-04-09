@@ -6,7 +6,9 @@ import PatientPrescList from "./PatientPrescList";
 function PatientPage() {
     return (
         <div>
-            <h1>Patient</h1>
+            <div className="header">
+                <h1>Patient</h1>
+            </div>
             <BrowserRouter>
                 <PatientSidebar></PatientSidebar>
                 <Routes>

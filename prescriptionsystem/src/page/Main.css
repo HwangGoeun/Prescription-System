@@ -1,36 +1,61 @@
-.main {
-    padding-left: 20%;
-    font-family: 'Noto Sans KR';
-    /* background-color: green; */
+@font-face {
+    font-family: baemin;
+    src: url(/Users/goeun/Documents/GitHub/Prescription-System/prescriptionsystem/src/fonts/Do_Hyeon/DoHyeon-Regular.ttf);
 }
 
-.patient {
-    padding-left: 20%;
-    background-color: goldenrod;
+.main {
+    padding-left: 3%;
 }
 
 .list {
     padding-left: 20%;
-    background-color:blanchedalmond
 }
 
-#header {
-    padding-left: 20%;
+h1 {
+    font-family: baemin;
+    padding: 30px 30px 30px 30px;
+}
+
+.header {
+    padding-left: 10px;
+    background-color: #F2F2F2;
+    box-shadow: 0px 5px 5px 3px gainsboro;
 }
 
 button {
+    text-align: left;
     border-radius: 15px;
     width: 95%;
-    padding: 10px 10px 10px 10px;
+    padding: 10px 0px 10px 30px;
     margin: 10px 10px 10px 10px;
-    font-size: xx-large;
-    background-color: white;
-    box-shadow: 10px;
+    font-size: 20px;
+    color: gray;
+    border: 0;
+    background-color: #E0ECF8;
+}
+
+.name {
+    color: black;
+    font-size: 30px;
 }
 
 .medicineBox {
     background-color: cornsilk;
     border-radius: 20px 20px 20px 20px;
-    padding: 10px 10px 10px 10px;
+    padding: 20px 10px 10px 10px;
     margin-right: 40px;
+}
+
+.buttonText {
+    float: left;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.logo {
+    float: right;
+    background-color: white;
+    width: 150px;
+    height: 150px;
+    margin-right: 5%;
+    border-radius: 20px 20px 20px 20px;
 }

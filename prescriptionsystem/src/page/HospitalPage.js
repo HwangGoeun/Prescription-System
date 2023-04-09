@@ -8,7 +8,9 @@ import HospitalPrescList from "./HospitalPrescList";
 function HospitalPage() {
     return (
         <div>
-            <h1>Hospital</h1>
+            <div className="header">
+                <h1>Hospital</h1>
+            </div>
             <BrowserRouter>
                 <HospitalSidebar></HospitalSidebar>
                 <Routes>
