@@ -1,5 +1,4 @@
 import React from "react";
-import styles from './App.css';
 import { useNavigate } from "react-router-dom";
 const Login=()=>{
 

@@ -1,5 +1,6 @@
 import React from "react";
 import {useNavigate} from "react-router-dom";
+import './main.css';
 const Pharmacy= ()=>{
     const navigate =useNavigate();
     const gotoInformation=()=>{
@@ -19,21 +20,22 @@ const Pharmacy= ()=>{
     ];
     return (
        <> 
-        <h3 className="Hospitalhead" style={{fontSize:40}}>Pharmacy list</h3> 
-        <div>
-            <div className="header"> 
-            <div style={{ display: "flex", flexDirection: "column", alignItems:"center",justifyContent:"center", gap: "10px" }}>
-                <button style={{ border: "2px solid black", padding: "20px", borderRadius: "5px" }} 
+        <h3 className="header" >Pharmacy list</h3> 
+        <div className="sidebar"><p className="sidebar-item">병원 목록</p></div>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+            <button style={{ border: "2px solid black", padding: "10px", borderRadius: "5px" }} 
                 onClick={gotoAddinfophar}>
                  추가
-                </button>
-            </div>
-                <h3>약국목록</h3>
-            </div>
+            </button>
+        
             <div>
             {pharmacy_list.map((pre, index) => {
                     return (<>
-                        <button variant="primary" onClick={gotoInformation}>
+                        <button className="button" variant="primary" onClick={gotoInformation}>
                             {pre.name} / {pre.location}
                         </button>
                         <p></p>   
@@ -44,7 +46,7 @@ const Pharmacy= ()=>{
             <div>
             {pharmacy_list2.map((pre, index) => {
                     return (<>
-                        <button variant="primary" onClick={gotoInformation2}>
+                        <button className="button" variant="primary" onClick={gotoInformation2}>
                             {pre.name} / {pre.location}
                         </button>
                         <p></p>   
@@ -52,7 +54,6 @@ const Pharmacy= ()=>{
                     ); 
                 })}
             </div>
-      </div>
       </>
     )
 };

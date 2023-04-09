@@ -1,6 +1,6 @@
 import React,{useState} from "react";
 import {useNavigate} from "react-router-dom";
-
+import './main.css';
 
 
 const Informationpharmacy= ()=>{
@@ -17,81 +17,86 @@ const Informationpharmacy= ()=>{
     // ];
    
     return (
-        
+      <>
         <div>
-            <h1>Information</h1>
+            <h3 className="header">Information</h3>
             <div>
             {hospital_list.map((pre, index) => {
                     return (<>
                          <>
+        <div className="sidebar"><p className="sidebar-item">약국 정보 기입란</p></div>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
         <div>
-          <h1>약국 정보 기입란</h1>
-        </div>
-        <div>
-          <p>약국 정보</p>
-          <table>
-            <thead>
-              <tr>
-                <th>약국</th>
-                <th>약국 코드</th>
-                <th>주소</th>
-                <th>대표 연락처</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td> {pre.hos_name}</td>
-                <td> {pre.hos_code}</td>
-                <td> {pre.location}</td>
-                <td> {pre.hos_tel}</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div>
-          <p>약사 정보</p>
-          <table>
-            <thead>
-              <tr>
-                <th>약사명</th>
-                <th>경력</th>
-                <th>약사 코드</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>{pre.doc_name}</td>
-                <td>{pre.doc_major}</td>
-                <td>{pre.doc_code}</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div>
-          <p>연계 병원 정보</p>
-          <table>
-            <thead>
-              <tr>
-                <th>병원명</th>
-                <th>전화번호</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>{pre.phar_name}</td>
-                <td>{pre.phar_tel}</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+          <div>
+          <h1></h1>
+            <h3>약국 정보</h3>
+            <table>
+              <thead>
+                <tr>
+                  <th>약국</th>
+                  <th>약국 코드</th>
+                  <th>주소</th>
+                  <th>대표 연락처</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td> {pre.hos_name}</td>
+                  <td> {pre.hos_code}</td>
+                  <td> {pre.location}</td>
+                  <td> {pre.hos_tel}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div>
+            <h3>약사 정보</h3>
+            <table>
+              <thead>
+                <tr>
+                  <th>약사명</th>
+                  <th>경력</th>
+                  <th>약사 코드</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>{pre.doc_name}</td>
+                  <td>{pre.doc_major}</td>
+                  <td>{pre.doc_code}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div>
+            <h3>연계 병원 정보</h3>
+            <table>
+              <thead>
+                <tr>
+                  <th>병원명</th>
+                  <th>전화번호</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>{pre.phar_name}</td>
+                  <td>{pre.phar_tel}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          </div>
       </>
                         </>
                           ); 
                         })}
-                    ;  
+                      
              </div>                
         </div>
-        
+      </>
     )
 };
 export default Informationpharmacy;

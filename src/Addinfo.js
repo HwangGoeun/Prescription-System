@@ -2,7 +2,7 @@ import React,{useRef,useState} from 'react';
 import { useNavigate } from 'react-router-dom';
 import Addinfo_set from './Addinfo_set';
 import Lists from './Lists';
-
+import './main.css';
 
 const Addinfo = () => {
     const [inputs,setInputs]=useState({

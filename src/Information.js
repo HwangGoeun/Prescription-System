@@ -1,14 +1,13 @@
 import React,{useState} from "react";
 import {useNavigate} from "react-router-dom";
-
-
+import './main.css';
 
 const Information= ()=>{
     const navigate =useNavigate();
     const hospital_list =
     [{hos_name:"세브란스병원", location:"서울 서대문구",hos_tel:"031-663-2213", hos_code:"코드번호 3443",
       doc_name:"홍길동", doc_major:"내과",doc_code:"코드번호 342", 
-      phar_name:"길 약국",phar_tel:"031-553-2211"  }];
+      phar_name:"길약국",phar_tel:"031-553-2211"  }];
     //  [
     //     { name: "세브란스병원", location: "서울 서대문구"},
     //     { name: "길병원", location: "인천 남동구"},
@@ -19,16 +18,19 @@ const Information= ()=>{
     return (
         
         <div>
-            <h1>Information</h1>
+            <h3 className="header">Information</h3>
+            <div className="sidebar"><p className="sidebar-item">병원 정보</p></div>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
             <div>
             {hospital_list.map((pre, index) => {
                     return (<>
                          <>
+
         <div>
-          <h1>병원 정보 기입란</h1>
-        </div>
-        <div>
-          <p>병원 정보</p>
+          <h3>병원 정보</h3>
           <table>
             <thead>
               <tr>
@@ -48,8 +50,8 @@ const Information= ()=>{
             </tbody>
           </table>
         </div>
-        <div>
-          <p>의사 정보</p>
+        <div> 
+          <h3>의사 정보</h3>
           <table>
             <thead>
               <tr>
@@ -68,7 +70,7 @@ const Information= ()=>{
           </table>
         </div>
         <div>
-          <p>연계 약국 정보</p>
+          <h3>연계 약국 정보</h3>
           <table>
             <thead>
               <tr>

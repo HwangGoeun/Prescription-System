@@ -1,13 +1,16 @@
 import React from "react";
-
+import './main.css';
 const Addinfo_set=({hos_name,hos_code,hos_tel,location,doc_code,doc_major,doc_name,phar_name,phar_tel,handleHospitalChange,handleEdit})=>{
     return(
         <>
+        <h3 className="header">Add information of Hospital</h3>
+        <div className="sidebar"><p className="sidebar-item">병원 정보 기입란</p></div>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
         <div>
-          <h1>병원 정보 기입란</h1>
-        </div>
-        <div>
-          <p>병원 정보</p>
           <table>
             <thead>
               <tr>
@@ -15,7 +18,7 @@ const Addinfo_set=({hos_name,hos_code,hos_tel,location,doc_code,doc_major,doc_na
                 <th>병원 코드</th>
                 <th>주소</th>
                 <th>대표 연락처</th>
-                <th><button onClick={handleEdit}>추가</button></th>
+                <th><button style={{ border: "2px solid black", padding: "10px", borderRadius: "5px" }} onClick={handleEdit}>추가</button></th>
               </tr>
             </thead>
             <tbody>
@@ -29,7 +32,7 @@ const Addinfo_set=({hos_name,hos_code,hos_tel,location,doc_code,doc_major,doc_na
           </table>
         </div>
         <div>
-          <p>의사 정보</p>
+          <h3>의사 정보</h3>
           <table>
             <thead>
               <tr>
@@ -48,7 +51,7 @@ const Addinfo_set=({hos_name,hos_code,hos_tel,location,doc_code,doc_major,doc_na
           </table>
         </div>
         <div>
-          <p>연계 약국 정보</p>
+          <h3>연계 약국 정보</h3>
           <table>
             <thead>
               <tr>

@@ -1,5 +1,6 @@
 import React from "react";
 import {useNavigate} from "react-router-dom";
+import './main.css';
 const Home= ()=>{
     const navigate =useNavigate();
     const gotoHospital=()=>{
@@ -10,13 +11,18 @@ const Home= ()=>{
     };
     return (
         <>
-        <h3 class name="Homehead" style={{fontSize:40}}>Management System</h3>
+        <h3 className="header" >Management System</h3>
+        <div className="sidebar"><p className="sidebar-item">병원/약국 관리</p></div>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
         <div style={{ display: "flex", flexDirection: "column", alignItems: "strech", justifyContent: "center", height: "50vh" }}>
           <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "20px" }}>
-            <button style={{ border: "2px solid black", padding: "50px", borderRadius: "5px" }} onClick={gotoHospital}>
+            <button className="button" onClick={gotoHospital}>
               Hospital Management
             </button>
-            <button style={{ border: "2px solid black", padding: "50px", borderRadius: "5px" }} onClick={gotoPharmacy}>
+            <button className="button" onClick={gotoPharmacy}>
               Pharmacy Management
             </button>
           </div>

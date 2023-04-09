@@ -2,7 +2,7 @@ import React,{useRef,useState} from 'react';
 import { useNavigate } from 'react-router-dom';
 import Addinfo_set_phar from './Addinfo_set_phar';
 import Lists_phar from './Lists_phar';
-
+import './main.css';
 
 const Addinfophar = () => {
     const [inputs,setInputs]=useState({

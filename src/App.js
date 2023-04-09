@@ -9,6 +9,7 @@ import Addinfo from './Addinfo';
 import Addinfophar from './Addinfophar';
 import Information2 from './Information2';
 import Informationpharmacy2 from './Informationpharmacy2';
+import './main.css';
 function App() {
   return (
     <BrowserRouter>

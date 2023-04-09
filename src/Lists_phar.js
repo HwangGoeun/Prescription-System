@@ -1,11 +1,11 @@
 import React,{useState} from "react";
- 
+import './main.css';
 
 function List_phar({pharmacys,onRemove}){
     const {hos_name,hos_code,hos_tel,location,doc_code,doc_major,doc_name,phar_name,phar_tel, id} = pharmacys;
     return (
         <div>
-            <button onClick={()=>onRemove(id)}>삭제</button>
+            <button  onClick={()=>onRemove(id)} style={{ border: "2px solid black", padding: "10px", borderRadius: "5px" }}>삭제</button>
             <p> {hos_name} {hos_tel} {location} {hos_code}   
              </p>
              <p>

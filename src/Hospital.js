@@ -1,5 +1,6 @@
 import React from "react";
 import {useNavigate} from "react-router-dom";
+import './main.css';
 const Hospital= ()=>{
     const navigate =useNavigate();
     const gotoInformation=()=>{
@@ -21,21 +22,24 @@ const Hospital= ()=>{
     ];
     return (
        <> 
-        <h3 className="Hospitalhead" style={{fontSize:40}}>Hospital list</h3> 
+        <h3 className="header">Hospital list</h3> 
+        <div className="sidebar"><p className="sidebar-item">병원 목록</p></div>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
         <div>
-            <div className="header"> 
-            <div style={{ display: "flex", flexDirection: "column", alignItems:"center",justifyContent:"center", gap: "10px" }}>
-                <button style={{ border: "2px solid black", padding: "20px", borderRadius: "5px" }} 
+            <div> 
+                <button style={{ border: "2px solid black", padding: "10px", borderRadius: "5px" }} 
                 onClick={gotoAddinfo}>
                  추가
                 </button>
             </div>
-                <h3>병원목록</h3>
-            </div>
             <div>
             {hospital_list.map((pre, index) => {
                     return (<>
-                        <button variant="primary" onClick={gotoInformation}>
+                        <button className="button" variant="primary" onClick={gotoInformation} >
                             {pre.name} / {pre.location}
                         </button>
                         <p></p>   
@@ -46,7 +50,7 @@ const Hospital= ()=>{
             <div>
             {hospital_list2.map((pre, index) => {
                     return (<>
-                        <button variant="primary" onClick={gotoInformation2}>
+                        <button variant="primary" className="button" onClick={gotoInformation2}>
                             {pre.name} / {pre.location}
                         </button>
                         <p></p>   

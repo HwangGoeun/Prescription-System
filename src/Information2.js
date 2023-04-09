@@ -1,6 +1,6 @@
 import React,{useState} from "react";
 import {useNavigate} from "react-router-dom";
-
+import './main.css';
 
 
 const Information2= ()=>{
@@ -19,16 +19,19 @@ const Information2= ()=>{
     return (
         
         <div>
-            <h1>Information</h1>
+            <h3 className="header">Information</h3>
+            <div className="sidebar"><p className="sidebar-item">병원 정보</p></div>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
             <div>
             {hospital_list2.map((pre, index) => {
                     return (<>
                          <>
+
         <div>
-          <h1>병원 정보 기입란</h1>
-        </div>
-        <div>
-          <p>병원 정보</p>
+          <h3>병원 정보</h3>
           <table>
             <thead>
               <tr>
@@ -49,7 +52,7 @@ const Information2= ()=>{
           </table>
         </div>
         <div>
-          <p>의사 정보</p>
+          <h3>의사 정보</h3>
           <table>
             <thead>
               <tr>
@@ -68,7 +71,7 @@ const Information2= ()=>{
           </table>
         </div>
         <div>
-          <p>연계 약국 정보</p>
+          <h3>연계 약국 정보</h3>
           <table>
             <thead>
               <tr>
