@@ -2,6 +2,7 @@ import React,{useRef,useState} from 'react';
 import { useNavigate } from 'react-router-dom';
 import Addinfo_set from './Addinfo_set';
 import Lists from './Lists';
+import { Footer } from './footer/footer';
 import './main.css';
 
 const Addinfo = () => {
@@ -77,7 +78,8 @@ const Addinfo = () => {
         handleHospitalChange={handleHospitalChange}
         handleEdit={handleEdit}
     />
-     <Lists hospital={hospital} onRemove={onRemove}/>     
+     <Lists hospital={hospital} onRemove={onRemove}/>   
+     <Footer></Footer>  
     </>
   )
   }; 

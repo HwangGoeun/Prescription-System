@@ -1,7 +1,7 @@
 import React,{useState} from "react";
 import {useNavigate} from "react-router-dom";
 import './main.css';
-
+import { Footer } from "./footer/footer";
 
 const Information2= ()=>{
     const navigate =useNavigate();
@@ -92,7 +92,8 @@ const Information2= ()=>{
                           ); 
                         })}
                     ;  
-             </div>                
+             </div>   
+             <Footer></Footer>             
         </div>
         
     )

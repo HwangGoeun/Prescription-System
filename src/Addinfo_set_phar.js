@@ -1,5 +1,6 @@
 import React from "react";
 import './main.css';
+import { Footer } from "./footer/footer";
 const Addinfo_set_phar=({phar_name,phar_code,phar_tel,location,doc_code,doc_major,doc_name,hos_name,hos_tel,handleHospitalChange,handleEdit})=>{
     return(
         <>
@@ -70,6 +71,7 @@ const Addinfo_set_phar=({phar_name,phar_code,phar_tel,location,doc_code,doc_majo
           </table>
           <h2>추가한 정보</h2>
         </div>
+        <Footer></Footer>
       </>
   
     )

@@ -1,6 +1,7 @@
 import React from "react";
 import {useNavigate} from "react-router-dom";
 import './main.css';
+import { Footer } from "./footer/footer";
 const Pharmacy= ()=>{
     const navigate =useNavigate();
     const gotoInformation=()=>{
@@ -54,6 +55,7 @@ const Pharmacy= ()=>{
                     ); 
                 })}
             </div>
+            <Footer></Footer>
       </>
     )
 };

@@ -1,6 +1,7 @@
 import React from "react";
 import {useNavigate} from "react-router-dom";
 import './main.css';
+import { Footer } from "./footer/footer";
 const Hospital= ()=>{
     const navigate =useNavigate();
     const gotoInformation=()=>{
@@ -59,6 +60,7 @@ const Hospital= ()=>{
                 })}
             </div>
       </div>
+      <Footer></Footer>
       </>
     )
 };

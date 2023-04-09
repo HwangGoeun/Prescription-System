@@ -1,7 +1,7 @@
 import React,{useState} from "react";
 import {useNavigate} from "react-router-dom";
 import './main.css';
-
+import { Footer } from "./footer/footer";
 const Information= ()=>{
     const navigate =useNavigate();
     const hospital_list =
@@ -91,8 +91,10 @@ const Information= ()=>{
                           ); 
                         })}
                     ;  
-             </div>                
+             </div> 
+             <Footer></Footer>               
         </div>
+ 
         
     )
 };

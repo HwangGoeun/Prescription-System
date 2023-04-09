@@ -1,6 +1,8 @@
 import React from "react";
 import {useNavigate} from "react-router-dom";
 import './main.css';
+import { Footer } from "./footer/footer";
+import {Logout} from "./Logout/logout"
 const Home= ()=>{
     const navigate =useNavigate();
     const gotoHospital=()=>{
@@ -27,6 +29,7 @@ const Home= ()=>{
             </button>
           </div>
         </div>
+        <Footer/> 
         </>
       );
     };
