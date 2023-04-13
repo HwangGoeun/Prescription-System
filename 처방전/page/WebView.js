@@ -1,8 +1,7 @@
 import React from 'react';
 import { useSelector} from 'react-redux';
 import { Link } from 'react-router-dom';
-
-
+import "./Design.css";
 const WebView = () => {
 
 
@@ -44,16 +43,18 @@ const WebView = () => {
 
 	return (
           <>
-            <h3>View</h3>
-            <Link to="/write"><button>수정하기</button></Link>
-			      <hr />
+            <h3 className="banner">View</h3>
+            <Link to="/write"><button className="btn_style">MODIFY</button></Link>
+            <br/><br/>
+            <button className="btn_style">EXIT</button>
+			      <br /><br />
 
 
-			<table border="1" width = "1500" height="1000" align="center">
+			<table className="table_style" border="1" width = "1100" height="1000" align="center">
 
 <thead>
   <tr>
-    <th colspan="10" height="100" align="center" valign = "middle">처방전</th>
+    <th className="table_title" colspan="10" height="100" align="center" valign = "middle">처 방 전</th>
   </tr>
 </thead>
 <tbody>
@@ -93,7 +94,7 @@ const WebView = () => {
     <td align="center" valign = "middle">면허번호</td>
     <td><p>제 {doctor_license_No} 호</p></td>
   </tr>
-  <tr>
+  <tr className="table_menu">
     <td colspan="3" align="center" valign = "middle">처방 의약품의 명칭</td>
     <td align="center" valign = "middle">1회 투여량</td>
     <td align="center" valign = "middle">1일 투여횟수</td>
@@ -131,6 +132,10 @@ const WebView = () => {
   </tr>
 </tbody>
 </table>
+
+
+<br /><br /><br /><br /><br /><br /><br /><br />
+
 
 		</>
 	);

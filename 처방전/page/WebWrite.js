@@ -1,6 +1,7 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
+import "./Design.css";
 
 import {inputInfo0,inputInfo1,inputInfo2,inputInfo3,
       inputInfo4,inputInfo5,inputInfo6,inputInfo7,
@@ -145,9 +146,10 @@ const WebWrite = () => {
 	return (
 		<>
 
-            <h3>Write</h3>
-            <Link to="/view"><button>저장하기</button></Link>
-            <hr/>
+            <h3 className="banner">Write</h3>
+            <Link to="/view"><button className="btn_style">SAVE</button></Link>
+
+            <br /><br />
 
 
             {/* <input type="text" value={No} onChange= {handleOnInfo0} style={styleObj}/> */}
@@ -187,19 +189,19 @@ const WebWrite = () => {
 
 
 
-            <table border="1" width = "1500" height="1000" align="center">
+            <table className="table_style" border="1" width = "1100" height="1000" align="center">
 
 <thead>
   <tr>
-    <th colspan="10" height="100" align="center" valign = "middle">처방전</th>
+    <th className="table_title" colspan="10" height="100" align="center" valign = "middle">처 방 전</th>
   </tr>
 </thead>
 
 <tbody>
   <tr>
     <td align="center" valign = "middle">교부번호</td>
-    <td colspan="2" >No. <input type="text" value={No} onChange= {handleOnInfo0} style={styleObj}/> </td>
-    <td rowspan="4" align="center" valign = "middle">의료기관</td>
+    <td colspan="2">No. <input type="text" value={No} onChange= {handleOnInfo0} style={styleObj}/> </td>
+    <td width = "50" rowspan="4" align="center" valign = "middle">의료기관</td>
     <td align="center" valign = "middle">의료기관 번호</td>
     <td colspan="2"><input type="text" value={medical_facility_No} onChange= {handleOnInfo4} style={styleObj}/></td>
   </tr>
@@ -221,7 +223,7 @@ const WebWrite = () => {
     <td colspan="2"><input type="text" value={medical_facility_email} onChange= {handleOnInfo7} style={styleObj}/></td>
   </tr>
   <tr>
-    <td colspan="2" rowspan="2" align="center" valign = "middle">병명</td>
+    <td height = "10" colspan="2" rowspan="2" align="center" valign = "middle">병명</td>
     <td rowspan="2"><input type="text" value={patient_disease} onChange= {handleOnInfo3} style={styleObj}/></td>
     <td rowspan="2" align="center" valign = "middle">담당의 성명</td>
     <td rowspan="2"><input type="text" value={doctor_name} onChange= {handleOnInfo8} placeholder="(서명 또는 날인)" style={styleObj}/></td>
@@ -232,8 +234,8 @@ const WebWrite = () => {
     <td align="center" valign = "middle">면허번호</td>
     <td>제 <input type="text" value={doctor_license_No} onChange= {handleOnInfo10} style={styleObj}/>호</td>
   </tr>
-  <tr>
-    <td colspan="3" align="center" valign = "middle">처방 의약품의 명칭</td>
+  <tr className="table_menu">
+    <td height = "100" colspan="3" align="center" valign = "middle">처방 의약품의 명칭</td>
     <td align="center" valign = "middle">1회 투여량</td>
     <td align="center" valign = "middle">1일 투여횟수</td>
     <td align="center" valign = "middle">총 투약일수</td>
@@ -264,7 +266,7 @@ const WebWrite = () => {
     <td colspan="6" align="center" valign = "middle">주사제 처방내역</td>
     <td align="center" valign = "middle">조제시 참고사항</td>
   </tr>
-  <tr>
+  <tr height="100">
     <td colspan="6"><input type="text" value={injectable_drug} onChange= {handleOnInfo26} style={styleObj}/></td>
     <td><input type="text" value={reference} onChange= {handleOnInfo27} style={styleObj}/></td>
   </tr>
@@ -272,7 +274,7 @@ const WebWrite = () => {
 
 </table>
 
-
+<br /><br /><br /><br /><br /><br /><br /><br />
 
       </>
 	);
